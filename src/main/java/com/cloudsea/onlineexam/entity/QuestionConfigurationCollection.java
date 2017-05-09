@@ -21,7 +21,7 @@ public class QuestionConfigurationCollection {
 	private String modifiedBy;
 
 	private String modifiedDate;
-	
+
 	public QuestionConfigurationCollection() {
 	}
 
