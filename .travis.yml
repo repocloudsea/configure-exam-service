@@ -8,7 +8,7 @@ install: true
 script: mvn package docker:build -q
 after_success:
 - docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-- docker push cloudsea/configure-exam-service-service
+- docker push cloudsea/configure-exam-service
 env:
   global:
   - secure: aJxdVnBv1SUgSsWl29gcaPs7yQRKflBce9vM0cbdbgvyuCOG6sk/xPe1lx8Osz4oZPY/VRwIX88nGpkriNkiyLgDzYmrG9E2hCwg1dEXn+2b+qM9qHtgyAmtcDQ1PKG8bbOfeP8tJlHJWegDOje/zK3T7/l7E7OEOfWOyXQnhszZwmsrtGiiRsExTdmRi1TkueNzCrbGHv3QkjNzm5+wlI0moU4fOaoTrPy771kUY+7y1WsVk/PtaD2y4jUT1kLPyliPJBRS9MGiJIRnIv7LhOugfjO2qHdwKhHdVxygNn4hsASE0cz3Fw31+KisZSETGt6WNdDSs3rL1tDGvQRovZBvuTVWlI1603uXwI7k3e1zD+C7yh5kUIuRF3NdI6sRZuns4cAaMgbA+qAyH6bt1WKDh85pHBnWHKT1iu8vPlLCUIZZItRdDKTvGNek25cNtUX3pS1oquIe8xrRa/1iUnXv1UBHhHzg6HIifOwiL+PYU7C6CiNp3RjdOOCotsxuuueh8U1wDb372C47uk/of/LPBh4A78OGwCHCODjG+enJ+QHU+Z5dtIaKpSgkFbOd4utf4N6pHRv3QOfd4lavFi/KREj7V8q+1KFmvgE1NhIkOVCYGoBUVYFsK2ggtaAiEIXrYZf6kGs2Hq2OGbDPc6e5EKjylYk7LqrOTpxrUL0=
