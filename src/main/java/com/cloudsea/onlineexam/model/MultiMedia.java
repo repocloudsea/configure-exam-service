@@ -54,15 +54,15 @@ public class MultiMedia {
         return Arrays.equals(mediaContent, that.mediaContent);
     }
 
-    @Override
-    public int hashCode() {
-        int result = mediaType.hashCode();
-        result = 31 * result + mediaName.hashCode();
-        result = 31 * result + (mediaSize != null ? mediaSize.hashCode() : 0);
-        result = 31 * result + extension.hashCode();
-        result = 31 * result + Arrays.hashCode(mediaContent);
-        return result;
-    }
+//    @Override
+//    public int hashCode() {
+//        int result = mediaType.hashCode();
+//        result = 31 * result + mediaName.hashCode();
+//        result = 31 * result + (mediaSize != null ? mediaSize.hashCode() : 0);
+//        result = 31 * result + extension.hashCode();
+//        result = 31 * result + Arrays.hashCode(mediaContent);
+//        return result;
+//    }
 
 	public String getMediaType() {
 		return mediaType;

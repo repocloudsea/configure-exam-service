@@ -10,7 +10,7 @@ import com.cloudsea.onlineexam.model.QuestionConfiguration;
 public class QuestionConfigurationCollection {
 
 	@Id
-	private long id;
+	private String id;
 
 	private QuestionConfiguration questionConfig;
 
@@ -26,10 +26,9 @@ public class QuestionConfigurationCollection {
 	}
 
 	@PersistenceConstructor
-	public QuestionConfigurationCollection(long id, QuestionConfiguration questionConfig, String createdBy,
+	public QuestionConfigurationCollection( QuestionConfiguration questionConfig, String createdBy,
 			String createDate, String modifiedBy, String modifiedDate) {
-		super();
-		this.id = id;
+		
 		this.questionConfig = questionConfig;
 		this.createdBy = createdBy;
 		this.createDate = createDate;
@@ -43,11 +42,11 @@ public class QuestionConfigurationCollection {
 				+ createDate + ", modifiedBy=" + modifiedBy + ", modifiedDate=" + modifiedDate + "]";
 	}
 
-	public long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

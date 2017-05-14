@@ -1,5 +1,6 @@
 package com.cloudsea.onlineexam.model;
 
+import java.math.BigDecimal;
 import java.util.Collection;
 
 /**
@@ -7,6 +8,7 @@ import java.util.Collection;
  */
 public class QuestionConfiguration {
 
+	
 
     private QuestionType questionType;
 
@@ -14,7 +16,7 @@ public class QuestionConfiguration {
 
     private Collection<Question> questions;
 
-    private Integer timeAlloted;
+    private BigDecimal timeAlloted;
 
     private boolean randomizeQuestion;
 
@@ -24,7 +26,7 @@ public class QuestionConfiguration {
         randomizeQuestion = false;
     }
 
-    public QuestionConfiguration(QuestionType questionType, Integer questionsCount, Collection<Question> questions, Integer timeAlloted, Integer weightage) {
+    public QuestionConfiguration(QuestionType questionType, Integer questionsCount, Collection<Question> questions, BigDecimal timeAlloted, Integer weightage) {
         this.questionType = questionType;
         this.questionsCount = questionsCount;
         this.questions = questions;
@@ -95,11 +97,13 @@ public class QuestionConfiguration {
 		this.questions = questions;
 	}
 
-	public Integer getTimeAlloted() {
+	
+
+	public BigDecimal getTimeAlloted() {
 		return timeAlloted;
 	}
 
-	public void setTimeAlloted(Integer timeAlloted) {
+	public void setTimeAlloted(BigDecimal timeAlloted) {
 		this.timeAlloted = timeAlloted;
 	}
 
